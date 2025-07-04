@@ -1,0 +1,68 @@
+/* src/App.css */
+
+/* Google'dan modern bir font import edelim */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* === DİNAMİK GRADIENT ARKA PLAN === */
+  /* Renkler: Istanbul'un gün batımı ve Boğaz'dan ilham aldı */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #f8cdda);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === GLASSMORPHISM KARTI İÇİN CLASS === */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px !important; /* MUI'nin stilini ezmek için !important */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Bütün scrollbar'ları hedefler (WebKit tabanlı tarayıcılar için - Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar genişliği */
+  height: 8px;
+}
+
+/* Scrollbar'ın arkasındaki iz (track) */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Camsı etkiyle uyumlu, hafif bir arka plan */
+  border-radius: 10px;
+}
+
+/* Scrollbar'ın hareket eden tutamacı (thumb) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4); /* Yarı şeffaf beyaz/gri bir tutamaç */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Tutamacın üzerine gelindiğindeki hali */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6); /* Biraz daha belirgin hale getir */
+}
+
+
+/* Firefox için daha basit scrollbar stili */
+/* Firefox, -webkit- kadar detaylı özelleştirmeye izin vermez */
+* {
+  scrollbar-width: thin; /* 'auto', 'thin', 'none' olabilir */
+  scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.1); /* tutamaç rengi ve iz rengi */
+}

@@ -1,0 +1,69 @@
+/* src/components/Results.css */
+.results-container {
+  width: 90%;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  background-color: #e9ecef;
+}
+
+.tabs button {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #6c757d;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs button.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  background-color: #fff;
+}
+
+.tab-content {
+  padding: 25px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.sentiment-result {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5em;
+}
+
+.sentiment-emoji {
+    font-size: 2em;
+}
+
+.ner-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.entity-chip {
+    padding: 8px 12px;
+    border-radius: 16px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.entity-chip.PER { background-color: #007bff; }
+.entity-chip.LOC { background-color: #28a745; }
+.entity-chip.ORG { background-color: #fd7e14; }
+.entity-chip.MISC { background-color: #6c757d; }

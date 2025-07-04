@@ -1,0 +1,27 @@
+/* src/components/AnalyzeButton.css */
+.analyze-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.analyze-button:active:not(:disabled) {
+  transform: translateY(2px);
+}
+
+.analyze-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
