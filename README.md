@@ -1,45 +1,74 @@
-# Derin Metin Analiz Aracı
+<div align="center">
 
-**Modern Doğal Dil İşleme (NLP) modellerini kullanarak metinler üzerinde derinlemesine analizler yapan, tam donanımlı (full-stack) bir web uygulaması.**
+# 🤖 Derin Metin Analiz Aracı 🧠
 
-Bu proje, Hugging Face ekosistemindeki son teknoloji yapay zeka modellerini, yüksek performanslı bir Python (FastAPI) backend'i ve estetik bir React frontend'i ile birleştirerek, uçtan uca bir MLOps projesinin nasıl hayata geçirileceğini göstermektedir. Uygulama, Docker ile tamamen konteynerize edilmiştir ve tek bir komutla her yerde çalıştırılabilir.
+### Uçtan Uca Bir NLP Portfolyo Projesi
+
+**Hugging Face, FastAPI ve React ile geliştirilmiş; uzun metinlerle başa çıkabilen, sağlamlaştırılmış ve Docker ile paketlenmiş, modern bir yapay zeka uygulaması.**
+
+</div>
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![Docker](https://img.shields.io/badge/Docker-20.10-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ---
 
-### 🚀 Uygulamanın Çalışan Hali
+###  демонстрация (Live Demo)
 
-[Buraya uygulamanızın çalışan halini gösteren etkileyici bir GIF veya ekran görüntüsü ekleyin. Bu, README dosyanızın en önemli görsel elementidir.]
+**[Yakında Eklenecek]**
 
-![Uygulama Demosu](https://i.imgur.com/your-gif-url.gif)
+<br>
+
+<div align="center">
+
+![Uygulama Demosu](https://i.imgur.com/K3uS1pX.png)
+
+</div>
+
+---
+
+### 🎯 Proje Hakkında
+
+Bu proje, sadece birkaç temel NLP görevini yerine getiren bir araç olmanın ötesinde, modern bir yazılım ürününün nasıl tasarlanıp hayata geçirildiğini gösteren kapsamlı bir çalışmadır. Temel amaç, Hugging Face Hub'daki son teknoloji (state-of-the-art) modelleri alıp, bu modelleri sağlam bir API arkasında servis ederek, estetik ve kullanışlı bir kullanıcı arayüzü ile birleştirmektir.
+
+Proje, Docker ile tamamen konteynerize edilerek, "benim makinemde çalışıyordu" sorununu ortadan kaldırır ve tek komutla her platformda çalışabilir hale getirilmiştir.
 
 ---
 
 ### ✨ Ana Özellikler
 
-* **Duygu Analizi:** Girilen metnin genel duygu tonunu (Pozitif / Negatif / Nötr) yüksek doğrulukla tespit eder.
-* **Metin Özetleme:** Çok uzun metinleri, anlamsal bütünlüğü koruyarak, akıllı ve özyineli (recursive) algoritmalarla özetler.
-* **İsimlendirilmiş Varlık Tanıma (NER):** Metin içindeki Kişi (PER), Yer (LOC) ve Kurum (ORG) gibi özel isimleri tanır ve etiketler.
-* **Modern Arayüz:** Açık/koyu tema desteği, "glassmorphism" efekti ve akıcı animasyonlar içeren, tamamen duyarlı (responsive) bir kullanıcı arayüzü.
-* **Sağlam Altyapı:** Çok uzun metinlerde bile çökmemesi için "chunking" ve "overlapping" gibi gelişmiş backend stratejileri ile donatılmıştır.
-* **Dockerize Edilmiş:** Tüm uygulama (frontend ve backend), tek bir Docker imajı olarak paketlenmiştir, bu sayede her ortamda tutarlı bir şekilde çalışır.
+-   **Gelişmiş Metin Analizi:** Özetleme, Duygu Analizi ve İsimlendirilmiş Varlık Tanıma (NER) yetenekleri.
+-   **Sağlamlaştırılmış Backend:** Çok uzun metinlerde bile çökmeden tutarlı sonuçlar üreten, "chunking" ve "recursive" algoritmalarla donatılmış API.
+-   **Modern ve Estetik Arayüz:** Material-UI (MUI), "Glassmorphism" efekti ve Framer Motion ile geliştirilmiş akıcı animasyonlara sahip, açık/koyu tema destekli UI.
+-   **Uçtan Uca Konteynerleştirme:** React frontend'i ve FastAPI backend'i, tek bir Docker imajında birleştiren "multi-stage build" yaklaşımı.
 
 ---
 
-### 🛠️ Kullanılan Teknolojiler
+### 🛠️ Teknik Derinlik ve Mimarî Kararlar
 
-* **Backend:**
-    * **Python 3.11**
-    * **FastAPI:** Yüksek performanslı API'ler için modern bir web framework'ü.
-    * **Hugging Face `transformers`:** Son teknoloji NLP modellerini kullanmak için.
-    * **PyTorch:** Derin öğrenme modellerinin altyapısı.
-    * **Uvicorn:** Yüksek hızlı ASGI sunucusu.
-* **Frontend:**
-    * **React 18:** Modern, bileşen tabanlı bir arayüz için.
-    * **Material-UI (MUI):** Profesyonel ve estetik UI bileşenleri için.
-    * **Framer Motion:** Akıcı ve yumuşak animasyonlar için.
-    * **Axios:** API isteklerini yönetmek için.
-* **Deployment & MLOps:**
-    * **Docker:** Uygulamayı ve tüm bağımlılıklarını konteynerize etmek için.
+Bu proje, standart tutorial'ların ötesine geçerek, gerçek dünya mühendislik problemlerine çözümler sunar:
+
+-   **Uzun Metinlerle Başa Çıkma:** Standart NLP modellerinin 512 token limiti, metinleri akıllıca parçalara ayırıp (`chunking`) sonuçları birleştiren bir strateji ile aşıldı.
+-   **Kaliteli Özetleme:** Naive "MapReduce" yerine, metnin anlamsal bütünlüğünü daha iyi koruyan **özyineli (recursive/hierarchical)** bir özetleme algoritması geliştirildi.
+-   **Hata Toleranslı Varlık Tanıma:** Varlıkların parça sınırlarında bölünmesini engellemek için **iç içe geçen parçalar (overlapping chunks)** tekniği kullanılarak modelin doğruluğu artırıldı.
+-   **Tek Komutla Çalıştırma:** "Multi-stage" Dockerfile sayesinde, hem Node.js tabanlı frontend build süreci hem de Python tabanlı backend, tek bir `docker build` komutuyla inşa edilip, tek bir imaj olarak paketlendi.
+
+---
+
+### 🏗️ Teknoloji Yığını
+
+| Kategori  | Teknoloji                                       |
+| :-------- | :---------------------------------------------- |
+| **Backend** | Python, FastAPI, Hugging Face Transformers, PyTorch |
+| **Frontend**| React, Material-UI (MUI), Framer Motion, Axios  |
+| **MLOps** | Docker (Multi-stage Build)                      |
 
 ---
 
@@ -49,12 +78,12 @@ Bu projeyi yerel makinenizde çalıştırmak için **Git** ve **Docker Desktop**
 
 1.  **Projeyi klonlayın:**
     ```bash
-    git clone [Bu reponun GitHub URL'i]
-    cd nlp-analysis-tool
+    git clone [https://github.com/boraoxkan/nlp-derin-analiz-araci.git](https://github.com/boraoxkan/nlp-derin-analiz-araci.git)
+    cd nlp-derin-analiz-araci
     ```
 
 2.  **Docker imajını oluşturun:**
-    (Bu işlem, bağımlılıklar indirileceği için ilk seferde birkaç dakika sürebilir.)
+    *(Bu işlem, bağımlılıklar indirileceği için ilk seferde birkaç dakika sürebilir.)*
     ```bash
     docker build -t nlp-analysis-app .
     ```
@@ -69,16 +98,21 @@ Bu projeyi yerel makinenizde çalıştırmak için **Git** ve **Docker Desktop**
 
 ---
 
-### 🧠 Bilinen Sınırlılıklar ve Öğrenimler
+### 🧠 Gelecek Geliştirmeler ve Öğrenimler
 
-Bu proje, gerçek dünya mühendisliğindeki değiş tokuşları (trade-offs) göstermektedir. En büyük hedefimiz, her koşulda çalışan **sağlam (robust)** bir sistem yaratmaktı. Bu hedefe ulaşırken karşılaştığımız bazı durumlar:
+Bu proje, önceden eğitilmiş modellerle neler yapılabileceğinin sınırlarını zorlamaktadır. Daha da ileriye taşımak için potansiyel adımlar şunlar olabilir:
 
-* **NER Sınır Hataları:** Çok uzun metinlerde, metni parçalara ayırma stratejimiz nedeniyle "Mustafa Kemal Atatürk" gibi birleşik isimler bazen ayrılabiliyor. Bu, kullandığımız önceden eğitilmiş modelin tokenizasyon sınırlılıklarından kaynaklanmaktadır.
-* **Özet Akıcılığı:** Özyineli özetleme algoritmamız, uzun metinlerde tutarlılığı büyük ölçüde artırsa da, bazen birleştirme noktalarında küçük anlamsal kopukluklar yaşanabilir.
+-   **Model Fine-Tuning:** NER sonuçlarındaki birleşik isimlerin bölünmesi gibi temel tokenizasyon sorunlarını çözmek için, özel bir veri seti ile modelin yeniden eğitilmesi.
+-   **WebSocket Entegrasyonu:** Analiz sonuçlarını HTTP istekleri yerine WebSocket üzerinden anlık olarak arayüze akıtmak.
+-   **Daha Detaylı Analiz:** Duygu analizini sadece pozitif/negatif olarak değil, "öfke, sevinç, korku" gibi daha granüler duyguları da içerecek şekilde genişletmek.
 
-Bu durumlar, projenin bir hatası olmaktan çok, üretim ortamında NLP modelleriyle çalışırken karşılaşılan doğal zorluklardır ve daha da ileri optimizasyonlar için modelin yeniden eğitilmesi (fine-tuning) gibi adımlar gerektirir.
+Bu proje, gerçek dünya verileriyle çalışırken karşılaşılan zorlukları ve "mükemmel" çözüm yerine "en sağlam" çözümü seçmenin önemini gösteren değerli bir öğrenme deneyimi olmuştur.
 
 ---
-### Lisans
 
-Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+### 👤 Yazar
+
+**Bora Ozkan**
+
+* **GitHub:** [@boraoxkan](https://github.com/boraoxkan)
+* **LinkedIn:** [linkedin.com/in/boraoxkan/](https://www.linkedin.com/in/boraoxkan/)
