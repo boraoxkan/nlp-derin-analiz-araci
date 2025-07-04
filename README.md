@@ -28,7 +28,7 @@
 
 <div align="center">
 
-![Uygulama Demosu](https://imgur.com/a/X8dLUg5)
+![Uygulama Demosu](./assets/DemoVideo.gif)
 
 </div>
 
