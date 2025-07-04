@@ -28,7 +28,7 @@
 
 <div align="center">
 
-![Uygulama Demosu](https://imgur.com/gallery/derin-metin-analiz-arac-X8dLUg5)
+![Uygulama Demosu](https://imgur.com/a/X8dLUg5)
 
 </div>
 
